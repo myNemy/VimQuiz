@@ -1,0 +1,99 @@
+{
+  "app": {
+    "title": "VIM QUIZ - Learn Vim Commands",
+    "version": "4.0 (Modular System + i18n)",
+    "description": "Interactive quiz to learn Vim commands"
+  },
+  "quiz": {
+    "question_label": "Question {current}/{total}",
+    "score_label": "Score: {score}",
+    "progress_label": "Progress",
+    "category_label": "Category:",
+    "difficulty_label": "Difficulty:",
+    "questions_label": "Questions:",
+    "update_quiz_button": "Update Quiz",
+    "answer_button": "Answer",
+    "next_button": "Next Question",
+    "restart_button": "Restart Quiz",
+    "shuffle_button": "Shuffle Questions",
+    "all_categories": "All",
+    "all_difficulties": "All"
+  },
+  "ui": {
+    "info_group": "Quiz Information",
+    "question_group": "Question",
+    "controls_group": "Controls",
+    "results_group": "Results",
+    "description_label": "Description will appear here...",
+    "language_label": "Language:",
+    "status_ready": "Ready to start the quiz!",
+    "status_questions_shuffled": "Questions shuffled!",
+    "status_quiz_restarted": "Quiz restarted!",
+    "status_quiz_updated": "Quiz updated with new settings!",
+    "status_quiz_completed": "Quiz completed! Score: {score}/{total}",
+    "status_category_selected": "Category selected: {category}",
+    "status_difficulty_selected": "Difficulty selected: {difficulty}",
+    "status_limit_changed": "Question limit: {limit}"
+  },
+  "messages": {
+    "select_answer": "Please select an answer!",
+    "correct_answer": "✅ <b>Correct!</b> '{command}' → {description}",
+    "wrong_answer": "❌ <b>Wrong!</b> Correct answer: '{command}' → {description}",
+    "perfect_score": "🎉 Perfect! All answers correct!",
+    "excellent_work": "👍 Excellent work! Keep it up!",
+    "good_work": "👍 Good work! You can improve further.",
+    "review_commands": "🔁 I recommend reviewing Vim commands.",
+    "quiz_completed": "Quiz Completed!",
+    "final_score": "Score: {score}/{total}",
+    "percentage": "Percentage: {percentage:.1f}%",
+    "message": "Message: {message}",
+    "wrong_answers": "Wrong Answers:",
+    "question_number": "Question {number}:",
+    "correct": "Correct:",
+    "selected": "Selected:",
+    "category": "Category:",
+    "difficulty": "Difficulty:"
+  },
+  "menu": {
+    "quiz": "Quiz",
+    "new_quiz": "New Quiz",
+    "shuffle_questions": "Shuffle Questions",
+    "update_settings": "Update Settings",
+    "statistics": "Question Statistics",
+    "exit": "Exit",
+    "help": "Help",
+    "about": "About"
+  },
+  "statistics": {
+    "title": "VIM QUIZ Question Statistics",
+    "total_questions": "Total Questions:",
+    "total_categories": "Total Categories:",
+    "questions_by_category": "Questions by Category:",
+    "questions_by_difficulty": "Questions by Difficulty:",
+    "available_categories": "Available Categories:",
+    "available_difficulties": "Available Difficulties:",
+    "questions_count": "{count} questions"
+  },
+  "about": {
+    "title": "About VIM QUIZ",
+    "description": "Interactive quiz to learn Vim commands",
+    "features": "Features:",
+    "feature_gui": "Modern graphical interface",
+    "feature_quiz": "Interactive quiz with multiple choice",
+    "feature_filters": "Advanced filters by category and difficulty",
+    "feature_score": "Real-time score tracking",
+    "feature_shuffle": "Ability to shuffle questions",
+    "feature_results": "Detailed results with errors",
+    "feature_modular": "Modular question system",
+    "feature_control": "Question count control",
+    "developed_with": "Developed with:",
+    "questions_by_category": "Questions by Category:"
+  },
+  "errors": {
+    "load_questions": "Error loading questions: {error}",
+    "load_translations": "Error loading translations: {error}",
+    "file_not_found": "File not found: {file}",
+    "invalid_json": "Invalid JSON in file: {file}",
+    "missing_key": "Missing translation key: {key}"
+  }
+}

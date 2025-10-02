@@ -1,0 +1,132 @@
+{
+  "category": "Marks and Jumps",
+  "description": "Comandi per segnalibri e salti nel testo",
+  "difficulty": "advanced",
+  "questions": [
+    {
+      "command": "ma",
+      "description": "set mark 'a' at current position",
+      "category": "mark"
+    },
+    {
+      "command": "'a",
+      "description": "jump to mark 'a'",
+      "category": "jump"
+    },
+    {
+      "command": "`a",
+      "description": "jump to mark 'a' (exact position)",
+      "category": "jump"
+    },
+    {
+      "command": "''",
+      "description": "jump to position before last jump",
+      "category": "jump"
+    },
+    {
+      "command": "``",
+      "description": "jump to exact position before last jump",
+      "category": "jump"
+    },
+    {
+      "command": "'.'",
+      "description": "jump to last change",
+      "category": "jump"
+    },
+    {
+      "command": "`.",
+      "description": "jump to exact position of last change",
+      "category": "jump"
+    },
+    {
+      "command": "'^",
+      "description": "jump to position where last insert stopped",
+      "category": "jump"
+    },
+    {
+      "command": "`^",
+      "description": "jump to exact position where last insert stopped",
+      "category": "jump"
+    },
+    {
+      "command": "'[",
+      "description": "jump to start of last change or yank",
+      "category": "jump"
+    },
+    {
+      "command": "`[",
+      "description": "jump to exact start of last change or yank",
+      "category": "jump"
+    },
+    {
+      "command": "']",
+      "description": "jump to end of last change or yank",
+      "category": "jump"
+    },
+    {
+      "command": "`]",
+      "description": "jump to exact end of last change or yank",
+      "category": "jump"
+    },
+    {
+      "command": "'<",
+      "description": "jump to start of last visual selection",
+      "category": "jump"
+    },
+    {
+      "command": "`<",
+      "description": "jump to exact start of last visual selection",
+      "category": "jump"
+    },
+    {
+      "command": "'>",
+      "description": "jump to end of last visual selection",
+      "category": "jump"
+    },
+    {
+      "command": "`>",
+      "description": "jump to exact end of last visual selection",
+      "category": "jump"
+    },
+    {
+      "command": "''",
+      "description": "jump to position before last jump",
+      "category": "jump"
+    },
+    {
+      "command": "``",
+      "description": "jump to exact position before last jump",
+      "category": "jump"
+    },
+    {
+      "command": "Ctrl+o",
+      "description": "go to previous cursor position",
+      "category": "jump"
+    },
+    {
+      "command": "Ctrl+i",
+      "description": "go to next cursor position",
+      "category": "jump"
+    },
+    {
+      "command": ":marks",
+      "description": "show all marks",
+      "category": "mark"
+    },
+    {
+      "command": ":delmarks a",
+      "description": "delete mark 'a'",
+      "category": "mark"
+    },
+    {
+      "command": ":delmarks a-z",
+      "description": "delete marks a through z",
+      "category": "mark"
+    },
+    {
+      "command": ":delmarks!",
+      "description": "delete all marks",
+      "category": "mark"
+    }
+  ]
+}

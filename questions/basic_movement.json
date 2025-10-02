@@ -1,0 +1,147 @@
+{
+  "category": "Basic Movement",
+  "description": "Comandi di movimento base del cursore",
+  "difficulty": "beginner",
+  "questions": [
+    {
+      "command": "h",
+      "description": "move cursor left",
+      "category": "horizontal"
+    },
+    {
+      "command": "j",
+      "description": "move cursor down",
+      "category": "vertical"
+    },
+    {
+      "command": "k",
+      "description": "move cursor up",
+      "category": "vertical"
+    },
+    {
+      "command": "l",
+      "description": "move cursor right",
+      "category": "horizontal"
+    },
+    {
+      "command": "w",
+      "description": "jump forwards to the start of a word",
+      "category": "word"
+    },
+    {
+      "command": "W",
+      "description": "jump forwards to the start of a word (words can contain punctuation)",
+      "category": "word"
+    },
+    {
+      "command": "e",
+      "description": "jump forwards to the end of a word",
+      "category": "word"
+    },
+    {
+      "command": "E",
+      "description": "jump forwards to the end of a word (words can contain punctuation)",
+      "category": "word"
+    },
+    {
+      "command": "b",
+      "description": "jump backwards to the start of a word",
+      "category": "word"
+    },
+    {
+      "command": "B",
+      "description": "jump backwards to the start of a word (words can contain punctuation)",
+      "category": "word"
+    },
+    {
+      "command": "0",
+      "description": "jump to the start of the line",
+      "category": "line"
+    },
+    {
+      "command": "^",
+      "description": "jump to the first non-blank character of the line",
+      "category": "line"
+    },
+    {
+      "command": "$",
+      "description": "jump to the end of the line",
+      "category": "line"
+    },
+    {
+      "command": "G",
+      "description": "go to the last line of the document",
+      "category": "document"
+    },
+    {
+      "command": "nG",
+      "description": "go to line number n",
+      "category": "document"
+    },
+    {
+      "command": ":n",
+      "description": "go to line number n",
+      "category": "document"
+    },
+    {
+      "command": "''",
+      "description": "to the position before the latest jump",
+      "category": "jump"
+    },
+    {
+      "command": "fx",
+      "description": "jump to next occurrence of character x",
+      "category": "search"
+    },
+    {
+      "command": "tx",
+      "description": "jump to one character before the character x",
+      "category": "search"
+    },
+    {
+      "command": "}",
+      "description": "jump to next paragraph",
+      "category": "paragraph"
+    },
+    {
+      "command": "{",
+      "description": "jump to previous paragraph",
+      "category": "paragraph"
+    },
+    {
+      "command": "H",
+      "description": "jump to home (top) of screen",
+      "category": "screen"
+    },
+    {
+      "command": "L",
+      "description": "jump to last line of screen",
+      "category": "screen"
+    },
+    {
+      "command": "M",
+      "description": "jump to middle of screen",
+      "category": "screen"
+    },
+    {
+      "command": "ge",
+      "description": "go to the end of the previous word",
+      "category": "word"
+    },
+    {
+      "command": "gE",
+      "description": "go to the end of the previous word (words can contain punctuation)",
+      "category": "word"
+    },
+    {
+      "command": "g_",
+      "description": "go to the last non-blank character of the line",
+      "category": "line"
+    },
+    {
+      "command": "gg",
+      "description": "go to the first line of the document",
+      "category": "document"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "categories": {
+    "File Operations": "File Operations",
+    "Basic Movement": "Basic Movement", 
+    "Screen Movement": "Screen Movement",
+    "Insert Mode": "Insert Mode",
+    "Editing": "Editing",
+    "Copy/Paste": "Copy/Paste",
+    "Search and Replace": "Search and Replace",
+    "Visual Mode": "Visual Mode",
+    "Marks and Jumps": "Marks and Jumps",
+    "Macros": "Macros"
+  },
+  "difficulties": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate", 
+    "advanced": "Advanced"
+  },
+  "descriptions": {
+    "File Operations": "Commands for managing files in Vim",
+    "Basic Movement": "Basic cursor movement commands",
+    "Screen Movement": "Commands for moving the screen view",
+    "Insert Mode": "Commands for entering and exiting insert mode",
+    "Editing": "Commands for modifying and editing text",
+    "Copy/Paste": "Commands for copying, cutting and pasting text",
+    "Search and Replace": "Commands for searching and replacing text",
+    "Visual Mode": "Commands for visual mode and text selection",
+    "Marks and Jumps": "Commands for bookmarks and jumps in text",
+    "Macros": "Commands for recording and executing macros"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "category": "Search and Replace",
+  "description": "Comandi per cercare e sostituire testo",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "command": "*",
+      "description": "search for word under cursor",
+      "category": "search"
+    },
+    {
+      "command": "/pattern",
+      "description": "search for pattern",
+      "category": "search"
+    },
+    {
+      "command": "?pattern",
+      "description": "search backward for pattern",
+      "category": "search"
+    },
+    {
+      "command": "n",
+      "description": "repeat search in same direction",
+      "category": "search"
+    },
+    {
+      "command": "N",
+      "description": "repeat search in opposite direction",
+      "category": "search"
+    },
+    {
+      "command": ":%s/old/new/g",
+      "description": "replace all old with new throughout file",
+      "category": "replace"
+    },
+    {
+      "command": ":%s/old/new/gc",
+      "description": "replace all old with new throughout file with confirmations",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/",
+      "description": "replace first occurrence of old with new in current line",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/g",
+      "description": "replace all occurrences of old with new in current line",
+      "category": "replace"
+    },
+    {
+      "command": ":#,#s/old/new/g",
+      "description": "replace all occurrences of old with new in lines # to #",
+      "category": "replace"
+    },
+    {
+      "command": ":%s/old/new/",
+      "description": "replace first occurrence of old with new in each line",
+      "category": "replace"
+    },
+    {
+      "command": ":%s/old/new/gc",
+      "description": "replace all occurrences of old with new with confirmation",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/i",
+      "description": "replace old with new (case insensitive)",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/I",
+      "description": "replace old with new (case sensitive)",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/c",
+      "description": "replace old with new with confirmation",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/n",
+      "description": "count occurrences of old without replacing",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/p",
+      "description": "replace old with new and print the line",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/l",
+      "description": "replace old with new and print the line with special characters",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/e",
+      "description": "replace old with new and suppress error messages",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/&",
+      "description": "replace old with new and repeat the last substitute command",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/~",
+      "description": "replace old with new using the last substitute string",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/r",
+      "description": "replace old with new and use the last substitute string",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/t",
+      "description": "replace old with new and copy the line to the clipboard",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/u",
+      "description": "replace old with new and make the first character uppercase",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/U",
+      "description": "replace old with new and make all characters uppercase",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/l",
+      "description": "replace old with new and make all characters lowercase",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/",
+      "description": "replace old with new (default flags)",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/g",
+      "description": "replace all occurrences of old with new in current line",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/",
+      "description": "replace first occurrence of old with new in current line",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/",
+      "description": "replace first occurrence of old with new in current line",
+      "category": "replace"
+    },
+    {
+      "command": ":s/old/new/",
+      "description": "replace first occurrence of old with new in current line",
+      "category": "replace"
+    }
+  ]
+}

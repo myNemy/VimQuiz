@@ -1,0 +1,102 @@
+{
+  "app": {
+    "title": "VIM QUIZ - Impara i Comandi Vim",
+    "version": "4.0 (Sistema Modulare + i18n)",
+    "description": "Quiz interattivo per imparare i comandi Vim"
+  },
+  "quiz": {
+    "question_label": "Domanda {current}/{total}",
+    "score_label": "Punteggio: {score}",
+    "progress_label": "Progresso",
+    "category_label": "Categoria:",
+    "difficulty_label": "Difficoltà:",
+    "questions_label": "Domande:",
+    "update_quiz_button": "Aggiorna Quiz",
+    "answer_button": "Rispondi",
+    "next_button": "Prossima Domanda",
+    "restart_button": "Riavvia Quiz",
+    "shuffle_button": "Mescola Domande",
+    "all_categories": "Tutte",
+    "all_difficulties": "Tutte"
+  },
+  "ui": {
+    "info_group": "Informazioni Quiz",
+    "question_group": "Domanda",
+    "controls_group": "Controlli",
+    "results_group": "Risultati",
+    "description_label": "La descrizione del comando apparirà qui...",
+    "status_ready": "Pronto per iniziare il quiz!",
+    "status_questions_shuffled": "Domande mescolate!",
+    "status_quiz_restarted": "Quiz riavviato!",
+    "status_quiz_updated": "Quiz aggiornato con le nuove impostazioni!",
+    "status_quiz_completed": "Quiz completato! Punteggio: {score}/{total}",
+    "status_category_selected": "Categoria selezionata: {category}",
+    "status_difficulty_selected": "Difficoltà selezionata: {difficulty}",
+    "status_limit_changed": "Limite domande: {limit}",
+    "status_language_changed": "Lingua cambiata in: {language}"
+  },
+  "messages": {
+    "select_answer": "Seleziona una risposta!",
+    "correct_answer": "✅ <b>Corretto!</b> '{command}' → {description}",
+    "wrong_answer": "❌ <b>Sbagliato!</b> Risposta corretta: '{command}' → {description}",
+    "perfect_score": "🎉 Perfetto! Tutte le risposte corrette!",
+    "excellent_work": "👍 Ottimo lavoro! Continua così!",
+    "good_work": "👍 Buon lavoro! Puoi migliorare ancora.",
+    "review_commands": "🔁 Ti consiglio di ripassare i comandi Vim.",
+    "quiz_completed": "Quiz Completato!",
+    "final_score": "Punteggio: {score}/{total}",
+    "percentage": "Percentuale: {percentage:.1f}%",
+    "message": "Messaggio: {message}",
+    "wrong_answers": "Risposte Sbagliate:",
+    "question_number": "Domanda {number}:",
+    "correct": "Corretto:",
+    "selected": "Selezionato:",
+    "category": "Categoria:",
+    "difficulty": "Difficoltà:",
+    "description": "Descrizione:",
+    "question_category": "Categoria:",
+    "question_difficulty": "Difficoltà:"
+  },
+  "menu": {
+    "quiz": "Quiz",
+    "new_quiz": "Nuovo Quiz",
+    "shuffle_questions": "Mescola Domande",
+    "update_settings": "Aggiorna Impostazioni",
+    "statistics": "Statistiche Domande",
+    "exit": "Esci",
+    "help": "Aiuto",
+    "about": "Informazioni"
+  },
+  "statistics": {
+    "title": "Statistiche Domande VIM QUIZ",
+    "total_questions": "Totale domande:",
+    "total_categories": "Totale categorie:",
+    "questions_by_category": "Domande per Categoria:",
+    "questions_by_difficulty": "Domande per Difficoltà:",
+    "available_categories": "Categorie Disponibili:",
+    "available_difficulties": "Difficoltà Disponibili:",
+    "questions_count": "{count} domande"
+  },
+  "about": {
+    "title": "Informazioni VIM QUIZ",
+    "description": "Quiz interattivo per imparare i comandi Vim",
+    "features": "Caratteristiche:",
+    "feature_gui": "Interfaccia grafica moderna",
+    "feature_quiz": "Quiz interattivo con opzioni multiple",
+    "feature_filters": "Filtri avanzati per categoria e difficoltà",
+    "feature_score": "Tracciamento del punteggio in tempo reale",
+    "feature_shuffle": "Possibilità di mescolare le domande",
+    "feature_results": "Risultati dettagliati con errori",
+    "feature_modular": "Sistema modulare per le domande",
+    "feature_control": "Controllo del numero di domande",
+    "developed_with": "Sviluppato con:",
+    "questions_by_category": "Domande per Categoria:"
+  },
+  "errors": {
+    "load_questions": "Errore nel caricamento delle domande: {error}",
+    "load_translations": "Errore nel caricamento delle traduzioni: {error}",
+    "file_not_found": "File non trovato: {file}",
+    "invalid_json": "JSON non valido nel file: {file}",
+    "missing_key": "Chiave di traduzione mancante: {key}"
+  }
+}

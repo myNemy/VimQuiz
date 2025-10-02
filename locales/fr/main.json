@@ -1,0 +1,98 @@
+{
+  "app": {
+    "title": "VIM QUIZ - Apprendre les Commandes Vim",
+    "version": "4.0 (Système Modulaire + i18n)",
+    "description": "Quiz interactif pour apprendre les commandes Vim"
+  },
+  "quiz": {
+    "question_label": "Question {current}/{total}",
+    "score_label": "Score: {score}",
+    "progress_label": "Progrès",
+    "category_label": "Catégorie:",
+    "difficulty_label": "Difficulté:",
+    "questions_label": "Questions:",
+    "update_quiz_button": "Mettre à jour le Quiz",
+    "answer_button": "Répondre",
+    "next_button": "Question Suivante",
+    "restart_button": "Redémarrer le Quiz",
+    "shuffle_button": "Mélanger les Questions",
+    "all_categories": "Toutes",
+    "all_difficulties": "Toutes"
+  },
+  "ui": {
+    "info_group": "Informations du Quiz",
+    "question_group": "Question",
+    "controls_group": "Contrôles",
+    "results_group": "Résultats",
+    "description_label": "La description de la commande apparaîtra ici...",
+    "status_ready": "Prêt à commencer le quiz !",
+    "status_questions_shuffled": "Questions mélangées !",
+    "status_quiz_restarted": "Quiz redémarré !",
+    "status_quiz_updated": "Quiz mis à jour avec les nouveaux paramètres !",
+    "status_quiz_completed": "Quiz terminé ! Score: {score}/{total}",
+    "status_category_selected": "Catégorie sélectionnée: {category}",
+    "status_difficulty_selected": "Difficulté sélectionnée: {difficulty}",
+    "status_limit_changed": "Limite de questions: {limit}"
+  },
+  "messages": {
+    "select_answer": "Veuillez sélectionner une réponse !",
+    "correct_answer": "✅ <b>Correct !</b> '{command}' → {description}",
+    "wrong_answer": "❌ <b>Incorrect !</b> Bonne réponse: '{command}' → {description}",
+    "perfect_score": "🎉 Parfait ! Toutes les réponses correctes !",
+    "excellent_work": "👍 Excellent travail ! Continuez !",
+    "good_work": "👍 Bon travail ! Vous pouvez encore vous améliorer.",
+    "review_commands": "🔁 Je recommande de réviser les commandes Vim.",
+    "quiz_completed": "Quiz Terminé !",
+    "final_score": "Score: {score}/{total}",
+    "percentage": "Pourcentage: {percentage:.1f}%",
+    "message": "Message: {message}",
+    "wrong_answers": "Réponses Incorrectes:",
+    "question_number": "Question {number}:",
+    "correct": "Correct:",
+    "selected": "Sélectionné:",
+    "category": "Catégorie:",
+    "difficulty": "Difficulté:"
+  },
+  "menu": {
+    "quiz": "Quiz",
+    "new_quiz": "Nouveau Quiz",
+    "shuffle_questions": "Mélanger les Questions",
+    "update_settings": "Mettre à jour les Paramètres",
+    "statistics": "Statistiques des Questions",
+    "exit": "Quitter",
+    "help": "Aide",
+    "about": "À propos"
+  },
+  "statistics": {
+    "title": "Statistiques des Questions VIM QUIZ",
+    "total_questions": "Total des questions:",
+    "total_categories": "Total des catégories:",
+    "questions_by_category": "Questions par Catégorie:",
+    "questions_by_difficulty": "Questions par Difficulté:",
+    "available_categories": "Catégories Disponibles:",
+    "available_difficulties": "Difficultés Disponibles:",
+    "questions_count": "{count} questions"
+  },
+  "about": {
+    "title": "À propos de VIM QUIZ",
+    "description": "Quiz interactif pour apprendre les commandes Vim",
+    "features": "Caractéristiques:",
+    "feature_gui": "Interface graphique moderne",
+    "feature_quiz": "Quiz interactif à choix multiples",
+    "feature_filters": "Filtres avancés par catégorie et difficulté",
+    "feature_score": "Suivi du score en temps réel",
+    "feature_shuffle": "Possibilité de mélanger les questions",
+    "feature_results": "Résultats détaillés avec erreurs",
+    "feature_modular": "Système modulaire de questions",
+    "feature_control": "Contrôle du nombre de questions",
+    "developed_with": "Développé avec:",
+    "questions_by_category": "Questions par Catégorie:"
+  },
+  "errors": {
+    "load_questions": "Erreur lors du chargement des questions: {error}",
+    "load_translations": "Erreur lors du chargement des traductions: {error}",
+    "file_not_found": "Fichier non trouvé: {file}",
+    "invalid_json": "JSON invalide dans le fichier: {file}",
+    "missing_key": "Clé de traduction manquante: {key}"
+  }
+}

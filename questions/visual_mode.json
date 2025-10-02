@@ -1,0 +1,127 @@
+{
+  "category": "Visual Mode",
+  "description": "Comandi per la modalità visuale e selezione del testo",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "command": "v",
+      "description": "enter visual mode (character-wise)",
+      "category": "visual"
+    },
+    {
+      "command": "V",
+      "description": "enter visual mode (line-wise)",
+      "category": "visual"
+    },
+    {
+      "command": "Ctrl+v",
+      "description": "enter visual mode (block-wise)",
+      "category": "visual"
+    },
+    {
+      "command": "gv",
+      "description": "reselect the last visual selection",
+      "category": "visual"
+    },
+    {
+      "command": "o",
+      "description": "move to other end of selection",
+      "category": "visual"
+    },
+    {
+      "command": "O",
+      "description": "move to other corner of selection",
+      "category": "visual"
+    },
+    {
+      "command": "aw",
+      "description": "select a word",
+      "category": "text_object"
+    },
+    {
+      "command": "as",
+      "description": "select a sentence",
+      "category": "text_object"
+    },
+    {
+      "command": "ap",
+      "description": "select a paragraph",
+      "category": "text_object"
+    },
+    {
+      "command": "a\"",
+      "description": "select around quotes",
+      "category": "text_object"
+    },
+    {
+      "command": "a(",
+      "description": "select around parentheses",
+      "category": "text_object"
+    },
+    {
+      "command": "a{",
+      "description": "select around braces",
+      "category": "text_object"
+    },
+    {
+      "command": "a[",
+      "description": "select around brackets",
+      "category": "text_object"
+    },
+    {
+      "command": "a<",
+      "description": "select around angle brackets",
+      "category": "text_object"
+    },
+    {
+      "command": "at",
+      "description": "select around tag",
+      "category": "text_object"
+    },
+    {
+      "command": "iw",
+      "description": "select inside word",
+      "category": "text_object"
+    },
+    {
+      "command": "is",
+      "description": "select inside sentence",
+      "category": "text_object"
+    },
+    {
+      "command": "ip",
+      "description": "select inside paragraph",
+      "category": "text_object"
+    },
+    {
+      "command": "i\"",
+      "description": "select inside quotes",
+      "category": "text_object"
+    },
+    {
+      "command": "i(",
+      "description": "select inside parentheses",
+      "category": "text_object"
+    },
+    {
+      "command": "i{",
+      "description": "select inside braces",
+      "category": "text_object"
+    },
+    {
+      "command": "i[",
+      "description": "select inside brackets",
+      "category": "text_object"
+    },
+    {
+      "command": "i<",
+      "description": "select inside angle brackets",
+      "category": "text_object"
+    },
+    {
+      "command": "it",
+      "description": "select inside tag",
+      "category": "text_object"
+    }
+  ]
+}

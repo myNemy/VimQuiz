@@ -1,0 +1,98 @@
+{
+  "app": {
+    "title": "VIM QUIZ - Lerne Vim-Befehle",
+    "version": "4.0 (Modulares System + i18n)",
+    "description": "Interaktives Quiz zum Lernen von Vim-Befehlen"
+  },
+  "quiz": {
+    "question_label": "Frage {current}/{total}",
+    "score_label": "Punktzahl: {score}",
+    "progress_label": "Fortschritt",
+    "category_label": "Kategorie:",
+    "difficulty_label": "Schwierigkeit:",
+    "questions_label": "Fragen:",
+    "update_quiz_button": "Quiz Aktualisieren",
+    "answer_button": "Antworten",
+    "next_button": "Nächste Frage",
+    "restart_button": "Quiz Neustarten",
+    "shuffle_button": "Fragen Mischen",
+    "all_categories": "Alle",
+    "all_difficulties": "Alle"
+  },
+  "ui": {
+    "info_group": "Quiz-Informationen",
+    "question_group": "Frage",
+    "controls_group": "Steuerung",
+    "results_group": "Ergebnisse",
+    "description_label": "Die Beschreibung des Befehls wird hier angezeigt...",
+    "status_ready": "Bereit, das Quiz zu starten!",
+    "status_questions_shuffled": "Fragen gemischt!",
+    "status_quiz_restarted": "Quiz neu gestartet!",
+    "status_quiz_updated": "Quiz mit neuen Einstellungen aktualisiert!",
+    "status_quiz_completed": "Quiz abgeschlossen! Punktzahl: {score}/{total}",
+    "status_category_selected": "Kategorie ausgewählt: {category}",
+    "status_difficulty_selected": "Schwierigkeit ausgewählt: {difficulty}",
+    "status_limit_changed": "Fragenlimit: {limit}"
+  },
+  "messages": {
+    "select_answer": "Bitte wählen Sie eine Antwort!",
+    "correct_answer": "✅ <b>Richtig!</b> '{command}' → {description}",
+    "wrong_answer": "❌ <b>Falsch!</b> Richtige Antwort: '{command}' → {description}",
+    "perfect_score": "🎉 Perfekt! Alle Antworten richtig!",
+    "excellent_work": "👍 Ausgezeichnete Arbeit! Weiter so!",
+    "good_work": "👍 Gute Arbeit! Sie können sich noch verbessern.",
+    "review_commands": "🔁 Ich empfehle, die Vim-Befehle zu wiederholen.",
+    "quiz_completed": "Quiz Abgeschlossen!",
+    "final_score": "Punktzahl: {score}/{total}",
+    "percentage": "Prozent: {percentage:.1f}%",
+    "message": "Nachricht: {message}",
+    "wrong_answers": "Falsche Antworten:",
+    "question_number": "Frage {number}:",
+    "correct": "Richtig:",
+    "selected": "Ausgewählt:",
+    "category": "Kategorie:",
+    "difficulty": "Schwierigkeit:"
+  },
+  "menu": {
+    "quiz": "Quiz",
+    "new_quiz": "Neues Quiz",
+    "shuffle_questions": "Fragen Mischen",
+    "update_settings": "Einstellungen Aktualisieren",
+    "statistics": "Fragen-Statistiken",
+    "exit": "Beenden",
+    "help": "Hilfe",
+    "about": "Über"
+  },
+  "statistics": {
+    "title": "VIM QUIZ Fragen-Statistiken",
+    "total_questions": "Gesamtfragen:",
+    "total_categories": "Gesamtkategorien:",
+    "questions_by_category": "Fragen nach Kategorie:",
+    "questions_by_difficulty": "Fragen nach Schwierigkeit:",
+    "available_categories": "Verfügbare Kategorien:",
+    "available_difficulties": "Verfügbare Schwierigkeiten:",
+    "questions_count": "{count} Fragen"
+  },
+  "about": {
+    "title": "Über VIM QUIZ",
+    "description": "Interaktives Quiz zum Lernen von Vim-Befehlen",
+    "features": "Funktionen:",
+    "feature_gui": "Moderne grafische Benutzeroberfläche",
+    "feature_quiz": "Interaktives Multiple-Choice-Quiz",
+    "feature_filters": "Erweiterte Filter nach Kategorie und Schwierigkeit",
+    "feature_score": "Echtzeit-Punktzahlverfolgung",
+    "feature_shuffle": "Möglichkeit, Fragen zu mischen",
+    "feature_results": "Detaillierte Ergebnisse mit Fehlern",
+    "feature_modular": "Modulares Fragensystem",
+    "feature_control": "Kontrolle der Fragenanzahl",
+    "developed_with": "Entwickelt mit:",
+    "questions_by_category": "Fragen nach Kategorie:"
+  },
+  "errors": {
+    "load_questions": "Fehler beim Laden der Fragen: {error}",
+    "load_translations": "Fehler beim Laden der Übersetzungen: {error}",
+    "file_not_found": "Datei nicht gefunden: {file}",
+    "invalid_json": "Ungültiges JSON in Datei: {file}",
+    "missing_key": "Fehlender Übersetzungsschlüssel: {key}"
+  }
+}

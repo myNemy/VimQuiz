@@ -1,0 +1,217 @@
+{
+  "category": "Editing",
+  "description": "Comandi per modificare e editare il testo",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "command": "r",
+      "description": "replace a single character",
+      "category": "replace"
+    },
+    {
+      "command": "J",
+      "description": "join line below to the current one",
+      "category": "join"
+    },
+    {
+      "command": "cc",
+      "description": "change (replace) entire line",
+      "category": "change"
+    },
+    {
+      "command": "cw",
+      "description": "change (replace) to the end of the word",
+      "category": "change"
+    },
+    {
+      "command": "c$",
+      "description": "change (replace) to the end of the line",
+      "category": "change"
+    },
+    {
+      "command": "s",
+      "description": "delete character and substitute text",
+      "category": "substitute"
+    },
+    {
+      "command": "S",
+      "description": "delete line and substitute text (same as cc)",
+      "category": "substitute"
+    },
+    {
+      "command": "xp",
+      "description": "transpose two letters (delete and paste)",
+      "category": "transpose"
+    },
+    {
+      "command": "u",
+      "description": "undo",
+      "category": "undo"
+    },
+    {
+      "command": "Ctrl+r",
+      "description": "redo",
+      "category": "redo"
+    },
+    {
+      "command": ".",
+      "description": "repeat last command",
+      "category": "repeat"
+    },
+    {
+      "command": "ciw",
+      "description": "change inside word",
+      "category": "change"
+    },
+    {
+      "command": "ci\"",
+      "description": "change inside quotes",
+      "category": "change"
+    },
+    {
+      "command": "ci(",
+      "description": "change inside parentheses",
+      "category": "change"
+    },
+    {
+      "command": "ci{",
+      "description": "change inside braces",
+      "category": "change"
+    },
+    {
+      "command": "ci[",
+      "description": "change inside brackets",
+      "category": "change"
+    },
+    {
+      "command": "ci<",
+      "description": "change inside angle brackets",
+      "category": "change"
+    },
+    {
+      "command": "cit",
+      "description": "change inside tag",
+      "category": "change"
+    },
+    {
+      "command": "diw",
+      "description": "delete inside word",
+      "category": "delete"
+    },
+    {
+      "command": "di\"",
+      "description": "delete inside quotes",
+      "category": "delete"
+    },
+    {
+      "command": "di(",
+      "description": "delete inside parentheses",
+      "category": "delete"
+    },
+    {
+      "command": "di{",
+      "description": "delete inside braces",
+      "category": "delete"
+    },
+    {
+      "command": "di[",
+      "description": "delete inside brackets",
+      "category": "delete"
+    },
+    {
+      "command": "di<",
+      "description": "delete inside angle brackets",
+      "category": "delete"
+    },
+    {
+      "command": "dit",
+      "description": "delete inside tag",
+      "category": "delete"
+    },
+    {
+      "command": "viw",
+      "description": "select inside word",
+      "category": "visual"
+    },
+    {
+      "command": "vi\"",
+      "description": "select inside quotes",
+      "category": "visual"
+    },
+    {
+      "command": "vi(",
+      "description": "select inside parentheses",
+      "category": "visual"
+    },
+    {
+      "command": "vi{",
+      "description": "select inside braces",
+      "category": "visual"
+    },
+    {
+      "command": "vi[",
+      "description": "select inside brackets",
+      "category": "visual"
+    },
+    {
+      "command": "vi<",
+      "description": "select inside angle brackets",
+      "category": "visual"
+    },
+    {
+      "command": "vit",
+      "description": "select inside tag",
+      "category": "visual"
+    },
+    {
+      "command": "gU",
+      "description": "make uppercase",
+      "category": "case"
+    },
+    {
+      "command": "gu",
+      "description": "make lowercase",
+      "category": "case"
+    },
+    {
+      "command": "g~",
+      "description": "toggle case",
+      "category": "case"
+    },
+    {
+      "command": "g?",
+      "description": "ROT13 encoding",
+      "category": "encoding"
+    },
+    {
+      "command": "~",
+      "description": "toggle case of character under cursor",
+      "category": "case"
+    },
+    {
+      "command": "gq",
+      "description": "format lines",
+      "category": "format"
+    },
+    {
+      "command": "gqq",
+      "description": "format current line",
+      "category": "format"
+    },
+    {
+      "command": "gqap",
+      "description": "format paragraph",
+      "category": "format"
+    },
+    {
+      "command": "gqG",
+      "description": "format from cursor to end of file",
+      "category": "format"
+    },
+    {
+      "command": "gqgg",
+      "description": "format from beginning of file to cursor",
+      "category": "format"
+    }
+  ]
+}

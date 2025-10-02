@@ -1,0 +1,82 @@
+{
+  "category": "File Operations",
+  "description": "Comandi per gestire i file in Vim",
+  "difficulty": "beginner",
+  "questions": [
+    {
+      "command": ":w",
+      "description": "write (save) the file, but don't exit",
+      "category": "save"
+    },
+    {
+      "command": ":wq",
+      "description": "write (save) and quit",
+      "category": "save_quit"
+    },
+    {
+      "command": ":x",
+      "description": "write (save) and quit (only if modified)",
+      "category": "save_quit"
+    },
+    {
+      "command": ":q",
+      "description": "quit (fails if there are unsaved changes)",
+      "category": "quit"
+    },
+    {
+      "command": ":q!",
+      "description": "quit and throw away unsaved changes",
+      "category": "quit"
+    },
+    {
+      "command": ":qa",
+      "description": "quit all buffers and windows",
+      "category": "quit"
+    },
+    {
+      "command": "ZZ",
+      "description": "write (save) current file, if modified, and quit",
+      "category": "save_quit"
+    },
+    {
+      "command": "ZQ",
+      "description": "quit without checking for changes",
+      "category": "quit"
+    },
+    {
+      "command": ":w filename",
+      "description": "write (save) the file with a new name",
+      "category": "save_as"
+    },
+    {
+      "command": ":w!",
+      "description": "force write (save) the file",
+      "category": "save"
+    },
+    {
+      "command": ":wa",
+      "description": "write (save) all modified buffers",
+      "category": "save"
+    },
+    {
+      "command": ":wqa",
+      "description": "write (save) all buffers and quit",
+      "category": "save_quit"
+    },
+    {
+      "command": ":e filename",
+      "description": "edit (open) a file",
+      "category": "open"
+    },
+    {
+      "command": ":e!",
+      "description": "reload the current file from disk",
+      "category": "reload"
+    },
+    {
+      "command": ":r filename",
+      "description": "read (insert) the contents of a file",
+      "category": "insert_file"
+    }
+  ]
+}

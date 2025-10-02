@@ -1,0 +1,222 @@
+{
+  "category": "Copy/Paste",
+  "description": "Comandi per copiare, tagliare e incollare testo",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "command": "yy",
+      "description": "yank (copy) a line",
+      "category": "yank"
+    },
+    {
+      "command": "2yy",
+      "description": "yank (copy) 2 lines",
+      "category": "yank"
+    },
+    {
+      "command": ":n,Ny",
+      "description": "yank lines n through N",
+      "category": "yank"
+    },
+    {
+      "command": "yw",
+      "description": "yank (copy) word",
+      "category": "yank"
+    },
+    {
+      "command": "y$",
+      "description": "yank (copy) to end of line",
+      "category": "yank"
+    },
+    {
+      "command": "p",
+      "description": "put (paste) the clipboard after cursor",
+      "category": "put"
+    },
+    {
+      "command": "P",
+      "description": "put (paste) before cursor",
+      "category": "put"
+    },
+    {
+      "command": "dd",
+      "description": "delete (cut) a line",
+      "category": "delete"
+    },
+    {
+      "command": "2dd",
+      "description": "delete (cut) 2 lines",
+      "category": "delete"
+    },
+    {
+      "command": ":n,Nd",
+      "description": "delete lines n through N",
+      "category": "delete"
+    },
+    {
+      "command": "dw",
+      "description": "delete (cut) word",
+      "category": "delete"
+    },
+    {
+      "command": "D",
+      "description": "delete (cut) to the end of the line",
+      "category": "delete"
+    },
+    {
+      "command": "d$",
+      "description": "delete (cut) to the end of the line",
+      "category": "delete"
+    },
+    {
+      "command": "x",
+      "description": "delete (cut) character",
+      "category": "delete"
+    },
+    {
+      "command": "X",
+      "description": "delete (cut) character before cursor",
+      "category": "delete"
+    },
+    {
+      "command": "yiw",
+      "description": "yank inside word",
+      "category": "yank"
+    },
+    {
+      "command": "yaw",
+      "description": "yank a word (including trailing whitespace)",
+      "category": "yank"
+    },
+    {
+      "command": "y0",
+      "description": "yank to beginning of line",
+      "category": "yank"
+    },
+    {
+      "command": "y^",
+      "description": "yank to first non-blank character of line",
+      "category": "yank"
+    },
+    {
+      "command": "yG",
+      "description": "yank to end of file",
+      "category": "yank"
+    },
+    {
+      "command": "ygg",
+      "description": "yank to beginning of file",
+      "category": "yank"
+    },
+    {
+      "command": "d0",
+      "description": "delete to beginning of line",
+      "category": "delete"
+    },
+    {
+      "command": "d^",
+      "description": "delete to first non-blank character of line",
+      "category": "delete"
+    },
+    {
+      "command": "dG",
+      "description": "delete to end of file",
+      "category": "delete"
+    },
+    {
+      "command": "dgg",
+      "description": "delete to beginning of file",
+      "category": "delete"
+    },
+    {
+      "command": "diw",
+      "description": "delete inside word",
+      "category": "delete"
+    },
+    {
+      "command": "daw",
+      "description": "delete a word (including trailing whitespace)",
+      "category": "delete"
+    },
+    {
+      "command": "di\"",
+      "description": "delete inside quotes",
+      "category": "delete"
+    },
+    {
+      "command": "da\"",
+      "description": "delete around quotes",
+      "category": "delete"
+    },
+    {
+      "command": "di(",
+      "description": "delete inside parentheses",
+      "category": "delete"
+    },
+    {
+      "command": "da(",
+      "description": "delete around parentheses",
+      "category": "delete"
+    },
+    {
+      "command": "di{",
+      "description": "delete inside braces",
+      "category": "delete"
+    },
+    {
+      "command": "da{",
+      "description": "delete around braces",
+      "category": "delete"
+    },
+    {
+      "command": "di[",
+      "description": "delete inside brackets",
+      "category": "delete"
+    },
+    {
+      "command": "da[",
+      "description": "delete around brackets",
+      "category": "delete"
+    },
+    {
+      "command": "di<",
+      "description": "delete inside angle brackets",
+      "category": "delete"
+    },
+    {
+      "command": "da<",
+      "description": "delete around angle brackets",
+      "category": "delete"
+    },
+    {
+      "command": "dit",
+      "description": "delete inside tag",
+      "category": "delete"
+    },
+    {
+      "command": "dat",
+      "description": "delete around tag",
+      "category": "delete"
+    },
+    {
+      "command": "gp",
+      "description": "put (paste) and leave cursor after the text",
+      "category": "put"
+    },
+    {
+      "command": "gP",
+      "description": "put (paste) before cursor and leave cursor after the text",
+      "category": "put"
+    },
+    {
+      "command": "]p",
+      "description": "put (paste) and adjust indentation",
+      "category": "put"
+    },
+    {
+      "command": "[p",
+      "description": "put (paste) before cursor and adjust indentation",
+      "category": "put"
+    }
+  ]
+}

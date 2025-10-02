@@ -1,0 +1,77 @@
+{
+  "category": "Insert Mode",
+  "description": "Comandi per entrare e uscire dalla modalità inserimento",
+  "difficulty": "beginner",
+  "questions": [
+    {
+      "command": "i",
+      "description": "insert before the cursor",
+      "category": "insert"
+    },
+    {
+      "command": "I",
+      "description": "insert at the beginning of the line",
+      "category": "insert"
+    },
+    {
+      "command": "a",
+      "description": "insert (append) after the cursor",
+      "category": "append"
+    },
+    {
+      "command": "A",
+      "description": "insert (append) at the end of the line",
+      "category": "append"
+    },
+    {
+      "command": "o",
+      "description": "append (open) a new line below the current line",
+      "category": "new_line"
+    },
+    {
+      "command": "O",
+      "description": "append (open) a new line above the current line",
+      "category": "new_line"
+    },
+    {
+      "command": "ea",
+      "description": "insert (append) at the end of the word",
+      "category": "append"
+    },
+    {
+      "command": "Esc",
+      "description": "exit insert mode",
+      "category": "exit"
+    },
+    {
+      "command": "Ctrl+c",
+      "description": "exit insert mode (alternative to Esc)",
+      "category": "exit"
+    },
+    {
+      "command": "gi",
+      "description": "go to last insert position and enter insert mode",
+      "category": "insert"
+    },
+    {
+      "command": "gI",
+      "description": "insert at the beginning of the line (column 0)",
+      "category": "insert"
+    },
+    {
+      "command": "gR",
+      "description": "enter replace mode",
+      "category": "replace"
+    },
+    {
+      "command": "R",
+      "description": "enter replace mode (overwrite characters)",
+      "category": "replace"
+    },
+    {
+      "command": "gv",
+      "description": "reselect the last visual selection",
+      "category": "visual"
+    }
+  ]
+}

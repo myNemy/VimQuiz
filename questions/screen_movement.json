@@ -1,0 +1,77 @@
+{
+  "category": "Screen Movement",
+  "description": "Comandi per muovere la visualizzazione dello schermo",
+  "difficulty": "intermediate",
+  "questions": [
+    {
+      "command": "Ctrl+u",
+      "description": "move screen up by half page",
+      "category": "scroll"
+    },
+    {
+      "command": "Ctrl+b",
+      "description": "move screen up by one page",
+      "category": "scroll"
+    },
+    {
+      "command": "Ctrl+d",
+      "description": "move screen down by half page",
+      "category": "scroll"
+    },
+    {
+      "command": "Ctrl+f",
+      "description": "move screen down by one page",
+      "category": "scroll"
+    },
+    {
+      "command": "zz",
+      "description": "center screen on cursor",
+      "category": "center"
+    },
+    {
+      "command": "zt",
+      "description": "align top of screen with cursor",
+      "category": "center"
+    },
+    {
+      "command": "zb",
+      "description": "align bottom of screen with cursor",
+      "category": "center"
+    },
+    {
+      "command": "Ctrl+e",
+      "description": "scroll down one line",
+      "category": "scroll"
+    },
+    {
+      "command": "Ctrl+y",
+      "description": "scroll up one line",
+      "category": "scroll"
+    },
+    {
+      "command": "z.",
+      "description": "center screen on cursor and put cursor in middle of screen",
+      "category": "center"
+    },
+    {
+      "command": "z-",
+      "description": "center screen on cursor and put cursor at bottom of screen",
+      "category": "center"
+    },
+    {
+      "command": "z+",
+      "description": "center screen on cursor and put cursor at top of screen",
+      "category": "center"
+    },
+    {
+      "command": "Ctrl+o",
+      "description": "go to previous cursor position",
+      "category": "jump"
+    },
+    {
+      "command": "Ctrl+i",
+      "description": "go to next cursor position",
+      "category": "jump"
+    }
+  ]
+}

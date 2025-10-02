@@ -1,0 +1,182 @@
+{
+  "category": "Macros",
+  "description": "Comandi per registrare ed eseguire macro",
+  "difficulty": "advanced",
+  "questions": [
+    {
+      "command": "qa",
+      "description": "start recording macro 'a'",
+      "category": "record"
+    },
+    {
+      "command": "q",
+      "description": "stop recording macro",
+      "category": "record"
+    },
+    {
+      "command": "@a",
+      "description": "execute macro 'a'",
+      "category": "execute"
+    },
+    {
+      "command": "@@",
+      "description": "execute last executed macro",
+      "category": "execute"
+    },
+    {
+      "command": "10@a",
+      "description": "execute macro 'a' 10 times",
+      "category": "execute"
+    },
+    {
+      "command": ":reg",
+      "description": "show contents of all registers",
+      "category": "register"
+    },
+    {
+      "command": ":reg a",
+      "description": "show contents of register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayy",
+      "description": "yank line into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ap",
+      "description": "put contents of register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"Ayy",
+      "description": "append line to register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayiw",
+      "description": "yank word into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"adw",
+      "description": "delete word into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"aP",
+      "description": "put contents of register 'a' before cursor",
+      "category": "register"
+    },
+    {
+      "command": "\"ay$",
+      "description": "yank to end of line into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ay0",
+      "description": "yank to beginning of line into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayG",
+      "description": "yank to end of file into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"aygg",
+      "description": "yank to beginning of file into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayiw",
+      "description": "yank inside word into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayaw",
+      "description": "yank a word into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayis",
+      "description": "yank inside sentence into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayas",
+      "description": "yank a sentence into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayip",
+      "description": "yank inside paragraph into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayap",
+      "description": "yank a paragraph into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayit",
+      "description": "yank inside tag into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ayat",
+      "description": "yank a tag into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ay\"",
+      "description": "yank inside quotes into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"aya\"",
+      "description": "yank around quotes into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ay(",
+      "description": "yank inside parentheses into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"aya(",
+      "description": "yank around parentheses into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ay{",
+      "description": "yank inside braces into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"aya{",
+      "description": "yank around braces into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ay[",
+      "description": "yank inside brackets into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"aya[",
+      "description": "yank around brackets into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"ay<",
+      "description": "yank inside angle brackets into register 'a'",
+      "category": "register"
+    },
+    {
+      "command": "\"aya<",
+      "description": "yank around angle brackets into register 'a'",
+      "category": "register"
+    }
+  ]
+}
