@@ -4,6 +4,7 @@ Un'applicazione GUI moderna per imparare i comandi Vim attraverso un quiz intera
 
 ## 🚀 Caratteristiche
 
+### Quiz Vim
 - **Interfaccia grafica moderna** con Qt6
 - **271+ comandi Vim** organizzati in 10 categorie
 - **Sistema modulare** per le domande (file JSON separati)
@@ -17,6 +18,17 @@ Un'applicazione GUI moderna per imparare i comandi Vim attraverso un quiz intera
 - **Statistiche complete** sulle domande
 - **Interfaccia intuitiva** e user-friendly
 
+### Editor Domande
+- **Editor grafico completo** per la gestione delle domande
+- **Supporto i18n integrato** per tutte le traduzioni
+- **Interfaccia a tab** per organizzare le funzionalità
+- **Gestione CRUD** completa delle domande
+- **Filtri avanzati** per categoria, difficoltà e lingua
+- **Salvataggio automatico** ogni 30 secondi
+- **Gestione delle traduzioni** in tempo reale
+- **Validazione dei dati** integrata
+- **Backup automatico** delle modifiche
+
 ## 📋 Requisiti
 
 - Python 3.6 o superiore
@@ -25,19 +37,32 @@ Un'applicazione GUI moderna per imparare i comandi Vim attraverso un quiz intera
 
 ## 🛠️ Installazione
 
-### Metodo 1: Script automatico (Raccomandato)
+### Quiz Vim
 ```bash
+# Script automatico (raccomandato)
 ./vimquiz.sh
-```
-Lo script installerà automaticamente PyQt6 se necessario.
 
-### Metodo 2: Installazione manuale
+# Avvio diretto
+python3 vimquiz.py
+```
+
+### Editor Domande
+```bash
+# Script automatico (raccomandato)
+./editor.sh
+
+# Avvio diretto
+python3 question_editor.py
+```
+
+### Installazione Manuale
 ```bash
 # Installa PyQt6
 pip3 install PyQt6
 
-# Avvia l'applicazione
-python3 vimquiz.py
+# Avvia le applicazioni
+python3 vimquiz.py          # Quiz principale
+python3 question_editor.py  # Editor domande
 ```
 
 ## 🎮 Utilizzo

@@ -98,5 +98,70 @@
     "file_not_found": "File non trovato: {file}",
     "invalid_json": "JSON non valido nel file: {file}",
     "missing_key": "Chiave di traduzione mancante: {key}"
+  },
+  "editor": {
+    "title": "VIM QUIZ - Editor Domande",
+    "description": "Editor per la gestione delle domande del quiz Vim con supporto i18n completo",
+    "questions_panel": {
+      "title": "Domande",
+      "filters": "Filtri",
+      "category_label": "Categoria:",
+      "difficulty_label": "Difficoltà:",
+      "language_label": "Lingua:",
+      "all": "Tutte",
+      "table_headers": {
+        "command": "Comando",
+        "category": "Categoria", 
+        "difficulty": "Difficoltà",
+        "language": "Lingua"
+      },
+      "new_question": "Nuova Domanda",
+      "delete_question": "Elimina Domanda"
+    },
+    "editor_panel": {
+      "title": "Editor Domande",
+      "basic_info": "Informazioni Base",
+      "translations": "Traduzioni",
+      "answer_options": "Opzioni di Risposta",
+      "command_label": "Comando Vim:",
+      "category_label": "Categoria:",
+      "difficulty_label": "Difficoltà:",
+      "description_label": "Descrizione (Italiano):",
+      "explanation_label": "Spiegazione:",
+      "translation_label": "Traduzione - {language}",
+      "description_translation": "Descrizione:",
+      "options_group": "Opzioni di Risposta",
+      "option_text": "Opzione",
+      "correct": "Corretta",
+      "explanation": "Spiegazione",
+      "add_option": "Aggiungi Opzione",
+      "remove_option": "Rimuovi Opzione"
+    },
+    "buttons": {
+      "save_question": "Salva Domanda",
+      "save_all": "Salva Tutte le Modifiche",
+      "revert": "Annulla Modifiche"
+    },
+    "menu": {
+      "file": "File",
+      "new_question": "Nuova Domanda",
+      "save_all": "Salva Tutto",
+      "exit": "Esci",
+      "language": "Lingua",
+      "help": "Aiuto",
+      "about": "Informazioni"
+    },
+    "messages": {
+      "ready": "Pronto",
+      "modified": "Modificato - Salva le modifiche",
+      "question_saved": "Domanda salvata",
+      "all_saved": "Tutte le modifiche salvate",
+      "changes_reverted": "Modifiche annullate",
+      "delete_confirm": "Sei sicuro di voler eliminare questa domanda?",
+      "unsaved_changes": "Hai modifiche non salvate. Vuoi salvarle?",
+      "save_success": "Tutte le modifiche sono state salvate con successo!",
+      "save_error": "Errore nel salvataggio delle modifiche: {error}",
+      "about_text": "VIM QUIZ Editor Domande\n\nUn potente strumento per gestire le domande del quiz Vim\ncon supporto i18n completo.\n\nVersione 1.0"
+    }
   }
 }
