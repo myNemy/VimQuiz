@@ -257,7 +257,8 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file LICENSE per i dett
 - **Vim Community** per la documentazione dei comandi
 - **Qt/PyQt** per il framework GUI
 - **Python** per la semplicità di sviluppo
-
+- **Cursor** per la semplicità della realizzazione
 ---
+- **Realizzato in VibeCoding**
 
 **Buon apprendimento dei comandi Vim!** 🎉

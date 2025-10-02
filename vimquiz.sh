@@ -23,34 +23,66 @@ fi
 
 # Controlla se PyQt6 è installato
 if ! python3 -c "import PyQt6" 2>/dev/null; then
-    echo -e "${YELLOW}PyQt6 non è installato. Installazione in corso...${NC}"
+    echo -e "${YELLOW}PyQt6 non è installato.${NC}"
     
-    # Prova a installare PyQt6
-    if command -v pip3 &> /dev/null; then
-        pip3 install PyQt6
-    elif command -v pip &> /dev/null; then
-        pip install PyQt6
+    # Controlla se esiste già un venv
+    if [ -d "venv" ]; then
+        echo -e "${BLUE}Trovato ambiente virtuale esistente. Attivazione...${NC}"
+        source venv/bin/activate
+        
+        # Verifica se PyQt6 è installato nel venv
+        if ! python -c "import PyQt6" 2>/dev/null; then
+            echo -e "${YELLOW}Installazione di PyQt6 nell'ambiente virtuale...${NC}"
+            pip install PyQt6
+        fi
     else
-        echo -e "${RED}Errore: pip non è installato.${NC}"
-        echo "Installa pip e PyQt6 per continuare:"
-        echo "  sudo apt install python3-pip  # Ubuntu/Debian"
-        echo "  pip3 install PyQt6"
+        echo -e "${BLUE}Creazione di un ambiente virtuale...${NC}"
+        
+        # Crea il venv
+        python3 -m venv venv
+        if [ $? -ne 0 ]; then
+            echo -e "${RED}Errore: Impossibile creare l'ambiente virtuale.${NC}"
+            echo "Installa python3-venv:"
+            echo "  sudo apt install python3-venv  # Ubuntu/Debian"
+            exit 1
+        fi
+        
+        # Attiva il venv
+        source venv/bin/activate
+        
+        # Installa PyQt6 nel venv
+        echo -e "${YELLOW}Installazione di PyQt6 nell'ambiente virtuale...${NC}"
+        pip install PyQt6
+        
+        if [ $? -ne 0 ]; then
+            echo -e "${RED}Errore: Impossibile installare PyQt6.${NC}"
+            echo "Prova a installare manualmente:"
+            echo "  source venv/bin/activate"
+            echo "  pip install PyQt6"
+            exit 1
+        fi
+    fi
+    
+    # Verifica finale
+    if ! python -c "import PyQt6" 2>/dev/null; then
+        echo -e "${RED}Errore: PyQt6 non è disponibile nell'ambiente virtuale.${NC}"
         exit 1
     fi
     
-    # Verifica se l'installazione è riuscita
-    if ! python3 -c "import PyQt6" 2>/dev/null; then
-        echo -e "${RED}Errore: Impossibile installare PyQt6.${NC}"
-        echo "Installa manualmente PyQt6:"
-        echo "  pip3 install PyQt6"
-        exit 1
-    fi
+    echo -e "${GREEN}PyQt6 installato correttamente nell'ambiente virtuale.${NC}"
+else
+    echo -e "${GREEN}PyQt6 trovato nel sistema.${NC}"
 fi
 
 echo -e "${GREEN}Avvio del VIM QUIZ...${NC}"
 echo
 
 # Avvia l'applicazione Python
-python3 vimquiz.py
+# Se siamo in un venv, usa 'python', altrimenti 'python3'
+if [ -n "$VIRTUAL_ENV" ]; then
+    python vimquiz.py
+else
+    python3 vimquiz.py
+fi
 
 echo -e "${GREEN}Grazie per aver usato VIM QUIZ!${NC}"
