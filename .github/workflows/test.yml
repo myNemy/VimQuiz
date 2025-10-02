@@ -1,0 +1,81 @@
+name: Test VimQuiz
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, '3.10', '3.11', '3.12']
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3-pyqt6
+    
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Test i18n system
+      run: |
+        python test_i18n.py
+    
+    - name: Test questions loader
+      run: |
+        python -c "
+        from questions_loader import QuestionsLoader
+        from i18n_manager import I18nManager
+        
+        # Test basic functionality
+        i18n = I18nManager()
+        loader = QuestionsLoader(i18n_manager=i18n)
+        
+        # Test all languages
+        for lang in i18n.get_supported_languages():
+            print(f'Testing language: {lang}')
+            i18n.set_language(lang)
+            questions = loader.get_all_questions()
+            print(f'  Loaded {len(questions)} questions')
+            
+            # Test difficulty filtering
+            for difficulty in loader.get_difficulties():
+                diff_questions = loader.get_questions_by_difficulty(difficulty)
+                print(f'  {difficulty}: {len(diff_questions)} questions')
+        
+        print('All tests passed!')
+        "
+    
+    - name: Test application startup (headless)
+      run: |
+        python -c "
+        import sys
+        from PyQt6.QtWidgets import QApplication
+        from vimquiz import VimQuizApp
+        
+        # Create QApplication without display
+        app = QApplication(sys.argv)
+        
+        # Test app initialization
+        try:
+            window = VimQuizApp()
+            print('Application initialized successfully')
+            window.close()
+        except Exception as e:
+            print(f'Error initializing application: {e}')
+            sys.exit(1)
+        "
