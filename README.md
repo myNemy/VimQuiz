@@ -1,180 +1,183 @@
-# VIM QUIZ - Quiz Interattivo per Imparare i Comandi Vim
+# VIM QUIZ - Interactive Quiz to Learn Vim Commands
 
-Un'applicazione GUI moderna per imparare i comandi Vim attraverso un quiz interattivo con sistema modulare delle domande.
+> **⚠️ VibeCode Experiment** - This is an experimental project created with VibeCode AI assistance. It demonstrates advanced GUI development, i18n implementation, and modular architecture using Python and PyQt6.
 
-## 🚀 Caratteristiche
+A modern GUI application to learn Vim commands through an interactive quiz with modular question system.
 
-### Quiz Vim
-- **Interfaccia grafica moderna** con Qt6
-- **271+ comandi Vim** organizzati in 10 categorie
-- **Sistema modulare** per le domande (file JSON separati)
-- **Internazionalizzazione (i18n)** con supporto per 5 lingue
-- **Filtri avanzati** per categoria e difficoltà
-- **Quiz interattivo** con opzioni multiple
-- **Tracciamento del punteggio** in tempo reale
-- **Possibilità di mescolare** le domande
-- **Controllo del numero di domande** (5-100)
-- **Risultati dettagliati** con errori e spiegazioni
-- **Statistiche complete** sulle domande
-- **Interfaccia intuitiva** e user-friendly
+## 🚀 Features
 
-### Editor Domande
-- **Editor grafico completo** per la gestione delle domande
-- **Supporto i18n integrato** per tutte le traduzioni
-- **Interfaccia a tab** per organizzare le funzionalità
-- **Gestione CRUD** completa delle domande
-- **Filtri avanzati** per categoria, difficoltà e lingua
-- **Salvataggio automatico** ogni 30 secondi
-- **Gestione delle traduzioni** in tempo reale
-- **Validazione dei dati** integrata
-- **Backup automatico** delle modifiche
+### Vim Quiz
+- **Modern graphical interface** with Qt6
+- **271+ Vim commands** organized in 10 categories
+- **Modular system** for questions (separate JSON files)
+- **Internationalization (i18n)** with support for 5 languages
+- **Advanced filters** by category and difficulty
+- **Interactive quiz** with multiple choice options
+- **Real-time score tracking**
+- **Question shuffling** capability
+- **Question count control** (5-100)
+- **Detailed results** with errors and explanations
+- **Complete statistics** on questions
+- **Intuitive and user-friendly** interface
 
-## 📋 Requisiti
+### Question Editor
+- **Complete graphical editor** for question management
+- **Integrated i18n support** for all translations
+- **Tabbed interface** to organize functionality
+- **Complete CRUD operations** for questions
+- **Advanced filters** by category, difficulty, and language
+- **Auto-save** every 30 seconds
+- **Real-time translation management**
+- **Integrated data validation**
+- **Automatic backup** of changes
 
-- Python 3.6 o superiore
+## 📋 Requirements
+
+- Python 3.6 or higher
 - PyQt6
-- Sistema operativo Linux/Windows/macOS
+- Linux/Windows/macOS operating system
 
-## 🛠️ Installazione
+## 🛠️ Installation
 
-### Quiz Vim
+### Vim Quiz
 ```bash
-# Script automatico (raccomandato)
+# Automatic script (recommended)
 ./vimquiz.sh
 
-# Avvio diretto
+# Direct launch
 python3 vimquiz.py
 ```
 
-### Editor Domande
+### Question Editor
 ```bash
-# Script automatico (raccomandato)
+# Automatic script (recommended)
 ./editor.sh
 
-# Avvio diretto
+# Direct launch
 python3 question_editor.py
 ```
 
-### Installazione Manuale
+### Manual Installation
 ```bash
-# Installa PyQt6
+# Install PyQt6
 pip3 install PyQt6
 
-# Avvia le applicazioni
-python3 vimquiz.py          # Quiz principale
-python3 question_editor.py  # Editor domande
+# Launch applications
+python3 vimquiz.py          # Main quiz
+python3 question_editor.py  # Question editor
 ```
 
-## 🎮 Utilizzo
+## 🎮 Usage
 
-### Avvio dell'Applicazione
+### Application Launch
 ```bash
-# Metodo 1: Script automatico (raccomandato)
+# Method 1: Automatic script (recommended)
 ./vimquiz.sh
 
-# Metodo 2: Avvio diretto
+# Method 2: Direct launch
 python3 vimquiz.py
 ```
 
-**Interfaccia principale**:
-- **Pannello superiore**: Informazioni sul quiz e progresso
-- **Pannello centrale**: Domanda e opzioni di risposta
-- **Pannello inferiore**: Controlli del quiz
-- **Pannello laterale**: Risultati in tempo reale
+**Main interface**:
+- **Top panel**: Quiz information and progress
+- **Center panel**: Question and answer options
+- **Bottom panel**: Quiz controls
+- **Side panel**: Real-time results
 
-**Controlli disponibili**:
-- **Rispondi**: Conferma la risposta selezionata
-- **Prossima Domanda**: Passa alla domanda successiva
-- **Riavvia Quiz**: Ricomincia il quiz
-- **Mescola Domande**: Mescola l'ordine delle domande
+**Available controls**:
+- **Answer**: Confirm selected answer
+- **Next Question**: Move to next question
+- **Restart Quiz**: Restart the quiz
+- **Shuffle Questions**: Shuffle question order
 
-## 📊 Comandi Vim Inclusi
+## 📊 Included Vim Commands
 
-Il quiz include **271+ comandi Vim** organizzati in **10 categorie**:
+The quiz includes **271+ Vim commands** organized in **10 categories**:
 
-### Categorie Disponibili:
-- **File Operations** (15 domande): `:w`, `:wq`, `:x`, `:q`, `:q!`, `:qa`, `ZZ`, `ZQ`, `:e`, `:r`, etc.
-- **Basic Movement** (28 domande): `h`, `j`, `k`, `l`, `w`, `W`, `e`, `E`, `b`, `B`, `0`, `^`, `$`, `G`, etc.
-- **Screen Movement** (14 domande): `Ctrl+u`, `Ctrl+b`, `Ctrl+d`, `Ctrl+f`, `zz`, `zt`, `zb`, etc.
-- **Insert Mode** (14 domande): `i`, `I`, `a`, `A`, `o`, `O`, `ea`, `Esc`, `R`, `gI`, etc.
-- **Editing** (42 domande): `r`, `J`, `cc`, `cw`, `c$`, `s`, `S`, `xp`, `u`, `Ctrl+r`, `.`, `ciw`, `diw`, etc.
-- **Copy/Paste** (43 domande): `yy`, `2yy`, `yw`, `y$`, `p`, `P`, `dd`, `2dd`, `dw`, `D`, `d$`, `x`, etc.
-- **Search and Replace** (31 domande): `*`, `/pattern`, `?pattern`, `n`, `N`, `:%s/old/new/g`, etc.
-- **Visual Mode** (24 domande): `v`, `V`, `Ctrl+v`, `aw`, `as`, `ap`, `iw`, `is`, `ip`, etc.
-- **Marks and Jumps** (25 domande): `ma`, `'a`, `''`, `Ctrl+o`, `Ctrl+i`, etc.
-- **Macros** (35 domande): `qa`, `q`, `@a`, `@@`, `:reg`, `"ayy`, `"ap`, etc.
+### Available Categories:
+- **File Operations** (15 questions): `:w`, `:wq`, `:x`, `:q`, `:q!`, `:qa`, `ZZ`, `ZQ`, `:e`, `:r`, etc.
+- **Basic Movement** (28 questions): `h`, `j`, `k`, `l`, `w`, `W`, `e`, `E`, `b`, `B`, `0`, `^`, `$`, `G`, etc.
+- **Screen Movement** (14 questions): `Ctrl+u`, `Ctrl+b`, `Ctrl+d`, `Ctrl+f`, `zz`, `zt`, `zb`, etc.
+- **Insert Mode** (14 questions): `i`, `I`, `a`, `A`, `o`, `O`, `ea`, `Esc`, `R`, `gI`, etc.
+- **Editing** (42 questions): `r`, `J`, `cc`, `cw`, `c$`, `s`, `S`, `xp`, `u`, `Ctrl+r`, `.`, `ciw`, `diw`, etc.
+- **Copy/Paste** (43 questions): `yy`, `2yy`, `yw`, `y$`, `p`, `P`, `dd`, `2dd`, `dw`, `D`, `d$`, `x`, etc.
+- **Search and Replace** (31 questions): `*`, `/pattern`, `?pattern`, `n`, `N`, `:%s/old/new/g`, etc.
+- **Visual Mode** (24 questions): `v`, `V`, `Ctrl+v`, `aw`, `as`, `ap`, `iw`, `is`, `ip`, etc.
+- **Marks and Jumps** (25 questions): `ma`, `'a`, `''`, `Ctrl+o`, `Ctrl+i`, etc.
+- **Macros** (35 questions): `qa`, `q`, `@a`, `@@`, `:reg`, `"ayy`, `"ap`, etc.
 
-## 🎯 Come Funziona
+## 🎯 How It Works
 
-1. **Selezione domanda**: L'applicazione seleziona casualmente un comando Vim
-2. **Generazione opzioni**: Crea 4 opzioni di risposta (1 corretta + 3 distrattori)
-3. **Risposta utente**: L'utente seleziona la risposta che ritiene corretta
-4. **Valutazione**: L'applicazione valuta la risposta e aggiorna il punteggio
-5. **Feedback**: Mostra se la risposta è corretta o sbagliata con spiegazioni
-6. **Risultati finali**: Al termine mostra statistiche complete e errori
+1. **Question selection**: Application randomly selects a Vim command
+2. **Option generation**: Creates 4 answer options (1 correct + 3 distractors)
+3. **User answer**: User selects the answer they think is correct
+4. **Evaluation**: Application evaluates the answer and updates the score
+5. **Feedback**: Shows if the answer is correct or wrong with explanations
+6. **Final results**: At the end shows complete statistics and errors
 
-## 🔧 Personalizzazione
+## 🔧 Customization
 
-### Aggiungere nuovi comandi
-Il sistema modulare permette di aggiungere facilmente nuovi comandi:
+### Adding new commands
+The modular system allows easy addition of new commands:
 
-1. **Aggiungi a una categoria esistente**: Modifica il file JSON nella cartella `questions/`
-2. **Crea una nuova categoria**: Crea un nuovo file JSON seguendo la struttura:
+1. **Add to existing category**: Modify the JSON file in the `questions/` folder
+2. **Create new category**: Create a new JSON file following the structure:
 
 ```json
 {
-  "category": "Nuova Categoria",
-  "description": "Descrizione della categoria",
+  "category": "New Category",
+  "description": "Category description",
   "difficulty": "beginner|intermediate|advanced",
   "questions": [
     {
-      "command": "nuovo_comando",
-      "description": "descrizione del comando",
-      "category": "sottocategoria"
+      "command": "new_command",
+      "description": "command description",
+      "category": "subcategory"
     }
   ]
 }
 ```
 
-### Struttura dei file delle domande
-Ogni file JSON nella cartella `questions/` contiene:
-- `category`: Nome della categoria
-- `description`: Descrizione della categoria
-- `difficulty`: Livello di difficoltà generale
-- `questions`: Array di domande con:
-  - `command`: Comando Vim
-  - `description`: Descrizione del comando
-  - `category`: Sottocategoria (opzionale)
+### Question file structure
+Each JSON file in the `questions/` folder contains:
+- `category`: Category name
+- `description`: Category description
+- `difficulty`: General difficulty level
+- `questions`: Array of questions with:
+  - `command`: Vim command
+  - `description`: Command description
+  - `category`: Subcategory (optional)
 
-### Aggiungere nuove lingue
-Il sistema i18n supporta facilmente l'aggiunta di nuove lingue:
+### Adding new languages
+The i18n system easily supports adding new languages:
 
-1. **Crea una nuova directory** nella cartella `locales/` (es. `locales/pt/` per il portoghese)
-2. **Copia i file di traduzione** da una lingua esistente
-3. **Traduci i contenuti** nei file `main.json` e `questions.json`
-4. **Riavvia l'applicazione** - la nuova lingua apparirà automaticamente nel selettore
+1. **Create new directory** in the `locales/` folder (e.g., `locales/pt/` for Portuguese)
+2. **Copy translation files** from an existing language
+3. **Translate contents** in `main.json` and `questions.json` files
+4. **Restart application** - the new language will automatically appear in the selector
 
-### Struttura dei file di traduzione
-Ogni lingua ha due file JSON:
-- `main.json`: Traduzioni dell'interfaccia principale
-- `questions.json`: Traduzioni delle categorie e difficoltà
+### Translation file structure
+Each language has two JSON files:
+- `main.json`: Main interface translations
+- `questions.json`: Category and difficulty translations
 
-### Modificare l'interfaccia
-L'interfaccia è completamente personalizzabile modificando i metodi `init_ui()` e `create_menu_bar()`.
+### Modifying the interface
+The interface is completely customizable by modifying the `init_ui()` and `create_menu_bar()` methods.
 
-## 📁 Struttura File
+## 📁 File Structure
 
 ```
 VIMQ/
-├── vimquiz.py              # Applicazione GUI Python (PyQt6)
-├── questions_loader.py     # Sistema di caricamento delle domande
-├── i18n_manager.py         # Sistema di internazionalizzazione
-├── test_i18n.py           # Test per il sistema i18n
-├── vimquiz.sh              # Script di avvio automatico
-├── requirements.txt        # Dipendenze Python
-├── README.md              # Documentazione principale
-├── example_usage.md       # Guida all'utilizzo
-├── questions/             # Directory delle domande modulari
+├── vimquiz.py              # Python GUI application (PyQt6)
+├── question_editor.py       # Question editor application
+├── questions_loader.py      # Question loading system
+├── i18n_manager.py         # Internationalization system
+├── vimquiz.sh              # Automatic launch script
+├── editor.sh               # Editor launch script
+├── requirements.txt        # Python dependencies
+├── README.md              # Main documentation
+├── example_usage.md       # Usage guide
+├── questions/             # Modular questions directory
 │   ├── file_operations.json
 │   ├── basic_movement.json
 │   ├── screen_movement.json
@@ -185,105 +188,121 @@ VIMQ/
 │   ├── visual_mode.json
 │   ├── marks_jumps.json
 │   └── macros.json
-└── locales/               # Directory delle traduzioni
-    ├── en/                # Inglese (lingua base)
+└── locales/               # Translations directory
+    ├── en/                # English (base language)
     │   ├── main.json
-    │   └── questions.json
-    ├── it/                # Italiano
+    │   ├── questions.json
+    │   └── question_descriptions.json
+    ├── it/                # Italian
     │   ├── main.json
-    │   └── questions.json
-    ├── es/                # Spagnolo
+    │   ├── questions.json
+    │   └── question_descriptions.json
+    ├── es/                # Spanish
     │   ├── main.json
-    │   └── questions.json
-    ├── fr/                # Francese
+    │   ├── questions.json
+    │   └── question_descriptions.json
+    ├── fr/                # French
     │   ├── main.json
-    │   └── questions.json
-    └── de/                # Tedesco
+    │   ├── questions.json
+    │   └── question_descriptions.json
+    └── de/                # German
         ├── main.json
-        └── questions.json
+        ├── questions.json
+        └── question_descriptions.json
 ```
 
-## 🐛 Risoluzione Problemi
+## 🐛 Troubleshooting
 
-### PyQt6 non si installa
+### PyQt6 won't install
 ```bash
-# Su Ubuntu/Debian
+# On Ubuntu/Debian
 sudo apt update
 sudo apt install python3-pip python3-pyqt6
 
-# Su Arch Linux
+# On Arch Linux
 sudo pacman -S python-pyqt6
 
-# Installazione manuale
+# Manual installation
 pip3 install --user PyQt6
 ```
 
-### L'applicazione non si avvia
+### Application won't start
 ```bash
-# Verifica Python
+# Check Python
 python3 --version
 
-# Verifica PyQt6
-python3 -c "import PyQt6; print('PyQt6 installato correttamente')"
+# Check PyQt6
+python3 -c "import PyQt6; print('PyQt6 installed correctly')"
 
-# Avvia con debug
+# Launch with debug
 python3 -v vimquiz.py
 ```
 
 ## 📝 Changelog
 
-### Versione 4.1 (Internazionalizzazione)
-- ✅ Sistema di internazionalizzazione (i18n) completo
-- ✅ Supporto per 5 lingue: Inglese, Italiano, Spagnolo, Francese, Tedesco
-- ✅ Rilevamento automatico della lingua di sistema
-- ✅ Selettore di lingua nell'interfaccia
-- ✅ Traduzioni complete per interfaccia e domande
-- ✅ Sistema di fallback per traduzioni mancanti
-- ✅ Test automatici per il sistema i18n
+### Version 4.2 (Question Editor)
+- ✅ Complete question editor GUI with PyQt6
+- ✅ Full i18n integration for all interface elements
+- ✅ CRUD operations for questions (Create, Read, Update, Delete)
+- ✅ Real-time translation management
+- ✅ Advanced filtering by category, difficulty, and language
+- ✅ Auto-save functionality every 30 seconds
+- ✅ Tabbed interface for organized editing
+- ✅ Answer options management with checkboxes
+- ✅ Integrated with existing i18n system
 
-### Versione 4.0 (Sistema Modulare)
-- ✅ Sistema modulare per le domande (file JSON separati)
-- ✅ 271+ comandi Vim organizzati in 10 categorie
-- ✅ Filtri avanzati per categoria e difficoltà
-- ✅ Controllo del numero di domande (5-100)
-- ✅ Statistiche complete sulle domande
-- ✅ Sistema di caricamento dinamico
-- ✅ Interfaccia migliorata con controlli aggiuntivi
+### Version 4.1 (Internationalization)
+- ✅ Complete internationalization (i18n) system
+- ✅ Support for 5 languages: English, Italian, Spanish, French, German
+- ✅ Automatic system language detection
+- ✅ Language selector in interface
+- ✅ Complete translations for interface and questions
+- ✅ Fallback system for missing translations
+- ✅ Automatic tests for i18n system
 
-### Versione 3.0 (GUI Qt6)
-- ✅ Interfaccia grafica moderna con Qt6
-- ✅ Quiz interattivo con opzioni multiple
-- ✅ Tracciamento punteggio in tempo reale
-- ✅ Risultati dettagliati con errori
-- ✅ Possibilità di mescolare domande
-- ✅ Menu e controlli intuitivi
+### Version 4.0 (Modular System)
+- ✅ Modular system for questions (separate JSON files)
+- ✅ 271+ Vim commands organized in 10 categories
+- ✅ Advanced filters by category and difficulty
+- ✅ Question count control (5-100)
+- ✅ Complete statistics on questions
+- ✅ Dynamic loading system
+- ✅ Improved interface with additional controls
 
-### Versione 2.x (Terminale)
-- Quiz a riga di comando
-- Sistema di debug
-- Modalità quiet e verbose
+### Version 3.0 (Qt6 GUI)
+- ✅ Modern graphical interface with Qt6
+- ✅ Interactive quiz with multiple choice
+- ✅ Real-time score tracking
+- ✅ Detailed results with errors
+- ✅ Question shuffling capability
+- ✅ Intuitive menus and controls
 
-## 🤝 Contributi
+### Version 2.x (Terminal)
+- Command line quiz
+- Debug system
+- Quiet and verbose modes
 
-I contributi sono benvenuti! Per contribuire:
+## 🤝 Contributing
 
-1. Fork del repository
-2. Crea un branch per la tua feature
-3. Commit delle modifiche
-4. Push al branch
-5. Crea una Pull Request
+Contributions are welcome! To contribute:
 
-## 📄 Licenza
+1. Fork the repository
+2. Create a branch for your feature
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-Questo progetto è rilasciato sotto licenza MIT. Vedi il file LICENSE per i dettagli.
+## 📄 License
 
-## 🙏 Ringraziamenti
+This project is released under MIT license. See the LICENSE file for details.
 
-- **Vim Community** per la documentazione dei comandi
-- **Qt/PyQt** per il framework GUI
-- **Python** per la semplicità di sviluppo
-- **Cursor** per la semplicità della realizzazione
+## 🙏 Acknowledgments
+
+- **Vim Community** for command documentation
+- **Qt/PyQt** for the GUI framework
+- **Python** for development simplicity
+- **Cursor** for easy implementation
+- **VibeCode** for AI assistance in development
 ---
-- **Realizzato in VibeCoding**
 
-**Buon apprendimento dei comandi Vim!** 🎉
+**Happy Vim command learning!** 🎉
